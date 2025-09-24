@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="#" method="post">
+
+        <!-- Name Input -->
+        <fieldset>
+            <legend>Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" maxlength="50" required />
+            <br><br>
+        <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <br><br>           
+        <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required />
+            <br><br> 
+        </fieldset>
+        <!-- Feedback Details -->
+        <br><br> 
+        <fieldset>
+            <legend>Feedback Details</legend>
+            <label for="category">Feedback Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="bug">Bug Report</option>
+                <option value="feature">Feature Request</option>
+                <option value="general">General Feedback</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <!-- Contact Method -->
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+            <label for="contactEmail">Email</label>
+            <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+            <label for="contactPhone">Phone</label>
+        </fieldset>
+        <br><br>
+        <!-- Additional Features of Interest -->
+        <fieldset>
+            <legend>Additional Features of Interest</legend>
+            <input type="checkbox" id="feature1" name="features" value="newsletter">
+            <label for="feature1">Newsletter</label>
+            <input type="checkbox" id="feature2" name="features" value="updates">
+            <label>Product Updates</label>
+            <input type="checkbox" id="feature3" name="features" value="offers">
+            <label for="feature3">Special Offers</label>
+        </fieldset>
+        <br><br>
+        <!-- Additional Comments -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" placeholder="Write your comments here" rows="5" cols="50"></textarea><br>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
